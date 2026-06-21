@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>TaDaS | Are Economists Open to AI?</title>
+    <meta
+      name="description"
+      content="A GitHub Pages project site for Text as Data as Survey, a framework for measuring professional sentiment from naturally occurring text."
+    >
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="TaDaS home">TaDaS</a>
+      <nav class="nav" aria-label="Primary navigation">
+        <a href="#method">Method</a>
+        <a href="#application">Application</a>
+        <a href="#figures">Figures</a>
+        <a href="#finding">Finding</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section">
+        <div class="hero-copy">
+          <p class="eyebrow">Text as Data as Survey</p>
+          <h1>Are<br>Economists<br>Open to AI?</h1>
+          <p class="lede">
+            TaDaS turns naturally occurring text into survey-like evidence by
+            linking professional discussion to a labeled research frontier
+            through cross-corpus semantic retrieval.
+          </p>
+          <div class="actions" aria-label="Page shortcuts">
+            <a class="button primary" href="#method">See the method</a>
+            <a class="button secondary" href="#finding">Read the finding</a>
+          </div>
+        </div>
+        <aside class="hero-panel" aria-label="Project summary">
+          <p class="panel-label">Project draft</p>
+          <h2>Professional sentiment and academic research trends</h2>
+          <p>
+            The project studies economists' reactions to artificial
+            intelligence using EJMR discussion and elite economics and finance
+            publications.
+          </p>
+        </aside>
+      </section>
+
+      <section class="metric-strip" aria-label="Project scale">
+        <div>
+          <strong>1.3M</strong>
+          <span>research-related EJMR posts</span>
+        </div>
+        <div>
+          <strong>53,585</strong>
+          <span>elite publications</span>
+        </div>
+        <div>
+          <strong>6</strong>
+          <span>attitude dimensions</span>
+        </div>
+      </section>
+
+      <section id="method" class="section split-section">
+        <div>
+          <p class="eyebrow">Method</p>
+          <h2>Text as Data as Survey</h2>
+          <p>
+            Traditional surveys are costly, hard to reconstruct
+            retrospectively, and vulnerable to self-presentation bias. Raw
+            internet text is abundant but noisy, weakly structured, and
+            platform-selected.
+          </p>
+          <p>
+            TaDaS separates the measurement problem into linked corpora. A
+            question corpus supplies the setting where attitudes are observed.
+            An answer corpus supplies labeled semantic directions. Shared
+            embeddings map the first corpus onto the second, producing
+            comparable topic exposures and attitude measures.
+          </p>
+        </div>
+        <div class="method-steps" aria-label="TaDaS workflow steps">
+          <article>
+            <span>01</span>
+            <h3>Extract the question space</h3>
+            <p>Screen naturally occurring text into focal and comparison neighborhoods.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Map to reference topics</h3>
+            <p>Project unstructured observations onto labeled topic centers.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Score the response</h3>
+            <p>Measure openness, negativity, toxicity, arrogance, curiosity, and confusion.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="application" class="section application">
+        <div class="section-heading">
+          <p class="eyebrow">Application</p>
+          <h2>EJMR discussion meets the publication frontier</h2>
+        </div>
+        <div class="application-grid">
+          <article>
+            <h3>Forum-side discourse</h3>
+            <p>
+              Economics Job Market Rumors records naturally occurring
+              professional talk: research discussion, labor-market anxiety,
+              methodological debate, status signaling, and conflict.
+            </p>
+          </article>
+          <article>
+            <h3>Publication-side topics</h3>
+            <p>
+              Elite economics and finance publications define a stable map of
+              research topics, including the AI trend used as the focal
+              publication-side proxy.
+            </p>
+          </article>
+          <article>
+            <h3>Survey-like evidence</h3>
+            <p>
+              Replies are scored across six dimensions so the project can
+              observe how economists argue, dismiss, defend, and engage when
+              AI-related issues arise.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="figures" class="section figures">
+        <div class="section-heading">
+          <p class="eyebrow">Figures</p>
+          <h2>A compact view of the workflow and evidence</h2>
+        </div>
+        <div class="figure-grid">
+          <figure class="featured-figure">
+            <img
+              src="draft/photo/workflow2.png"
+              alt="Workflow linking publications and forum discussion in the TaDaS design"
+            >
+            <figcaption>TaDaS links publication topics to professional forum discussion.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="draft/photo/Proxy_Trend.png"
+              alt="Publication-side topic proxy trends over time"
+            >
+            <figcaption>Publication-side topic proxies track changes in the research frontier.</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="draft/photo/DDD_Trend_Break_Effects_4+.png"
+              alt="Difference-in-difference-in-differences estimates across attitude dimensions"
+            >
+            <figcaption>The main design relates AI visibility to forum-side sentiment.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="finding" class="section finding">
+        <p class="eyebrow">Descriptive finding</p>
+        <h2>AI-related discussion starts tense, then softens with visibility.</h2>
+        <p>
+          In the static cross section, AI-related discussion is less open and
+          more negative. In the preferred DDD design, stronger publication-side
+          AI visibility is associated with greater openness and curiosity, and
+          with lower negative tone, poisonousness, arrogance, and confusion.
+        </p>
+        <p class="caution">
+          The interpretation is descriptive rather than causal: legitimacy,
+          practical adaptation, and changing speaker composition are all
+          plausible channels.
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        TaDaS: Text as Data as Survey. Project draft source:
+        <code>draft/OpenEcon.tex</code>.
+      </p>
+    </footer>
+  </body>
+</html>
